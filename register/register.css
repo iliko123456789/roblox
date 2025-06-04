@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('register imgs/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2d2d2d;
+}
+
+.roblox_text {
+  display: block;
+  margin: 8px auto 8px;
+  height: 140px;
+  max-width: 600px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.login_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+}
+
+.Sign_up_div {
+  width: 420px;        /* increase width */
+  padding: 16px 24px;  /* reduce padding to make it shorter */
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  margin: 20px auto;   /* optional: brings it slightly closer to the top */
+}
+
+
+.Sign_up_div h5 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.Sign_up_div p {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+}
+
+.birthday-selects {
+  display: flex;
+  gap: 0;
+  margin-bottom: 8px;
+}
+
+.Sign_up_div select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 2px solid #3a3a3a;
+  padding: 8px 32px 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: none;
+  flex: 1;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #f0f0f0 50%),
+    linear-gradient(135deg, #f0f0f0 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.Sign_up_div select + select {
+  margin-left: -2px;
+}
+
+.Sign_up_div select:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.Sign_up_div select:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.Sign_up_div select:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.Sign_up_div input {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 2px solid #3a3a3a;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  transition: none;
+}
+
+.Sign_up_div input::placeholder {
+  color: #888;
+}
+
+.Sign_up_div .gender-btn {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 2px solid #3a3a3a;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: none;
+}
+
+.Sign_up_div .submit-btn {
+  margin-top: 12px;
+  background-color: #4c8bf5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: none;
+}
+.gender-select {
+  display: flex;
+  gap: 0;
+  margin: 0 auto;
+}
+
+.gender-btn {
+  flex: 1;
+  height: 45px;
+  background-color: #1e1e1e;
+  border: 2px solid #3a3a3a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background-color 0.2s;
+  padding: 0;
+  position: relative;
+  width: 185px;
+}
+
+.gender-btn:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.gender-btn:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.gender-btn + .gender-btn {
+  margin-left: -2px;
+}
+
+.gender-btn:hover {
+  border-color: #5a8dee;
+}
+
+.gender-btn.selected {
+  background-color: #4c8bf5;
+  border-color: #4c8bf5;
+}
+
+.gender-icon {
+  width: 32px;
+  height: 32px;
+  user-select: none;
+  pointer-events: none;
+}
+.terms-text {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #cfcfcf;
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+.terms-text a {
+  color: #00a2ff;
+  text-decoration: underline;
+}
+
+.terms-text a:hover {
+  color: #1cb0ff;
+}
+.submit-btn {
+  margin-top: 8px;
+  background-color: #cccccc; /* gray when disabled */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: not-allowed;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.2s, cursor 0.2s;
+}
+
+.submit-btn:enabled {
+  background-color: #00b06e;
+  cursor: pointer;
+}
+
+.submit-btn:enabled:hover {
+  background-color: #00a163;
+}
