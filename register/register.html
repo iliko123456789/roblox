@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Robox</title>
+    <title>Roblox</title>
     <link rel="icon" href="register imgs/roblox_icon.png" type="image/png">
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <img src="register imgs/roblox text.png" alt="Roblox Text Logo" class="roblox_text">
-    <button class="login_button">Log In</button>
+    <a href="../login/login.html">
+        <button class="login_button">Log In</button>
+    </a>
 
-    <div class="Sign_up_div">
+    <form class="Sign_up_div" onsubmit="return false;">
         <h5>Sign up and start having fun!</h5>
-        <p>Birthday</p>
 
+        <p>Birthday</p>
         <div class="birthday-selects">
             <select id="day" name="day"></select>
             <select id="month" name="month"></select>
@@ -21,11 +23,12 @@
         </div>
 
         <p>Username</p>
-        <input name="username" placeholder="Don't use your real name">
-        <p>Password</p>
-        <input name="password" type="password" placeholder="At least 8 characters">
-        <p>Gender (optional)</p>
+        <input name="username" autocomplete="off" placeholder="Don't use your real name">
 
+        <p>Password</p>
+        <input name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters">
+
+        <p>Gender (optional)</p>
         <div class="gender-select">
             <button type="button" class="gender-btn" data-gender="Male">
                 <img src="register imgs/male.png" alt="Male" class="gender-icon">
@@ -39,11 +42,11 @@
             By clicking <strong>Sign Up</strong>, you agree to the 
             <a href="https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use" target="_blank" rel="noopener">Terms of Use</a> 
             and acknowledge the 
-            <a href="https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Polic" target="_blank" rel="noopener">Privacy Policy</a>.
+            <a href="https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy" target="_blank" rel="noopener">Privacy Policy</a>.
         </p>
 
         <button type="submit" class="submit-btn" disabled>Sign Up</button>
-    </div>
+    </form>
 
     <script src="register.js"></script>
 </body>

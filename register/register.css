@@ -37,8 +37,8 @@ body {
 }
 
 .Sign_up_div {
-  width: 420px;        /* increase width */
-  padding: 16px 24px;  /* reduce padding to make it shorter */
+  width: 420px;
+  padding: 16px 24px;
   background-color: #2d2d2d;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
@@ -46,11 +46,12 @@ body {
   color: #f0f0f0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 6px;
   box-sizing: border-box;
-  margin: 20px auto;   /* optional: brings it slightly closer to the top */
+  margin: 20px auto;
+  position: relative;
+  top: -25px;
 }
-
 
 .Sign_up_div h5 {
   font-size: 18px;
@@ -64,13 +65,13 @@ body {
 .Sign_up_div p {
   font-size: 13px;
   font-weight: 600;
-  margin: 8px 0 4px;
+  margin: 4px 0 2px;
 }
 
 .birthday-selects {
   display: flex;
   gap: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .Sign_up_div select {
@@ -147,7 +148,7 @@ body {
 }
 
 .Sign_up_div .submit-btn {
-  margin-top: 12px;
+  margin-top: 6px;
   background-color: #4c8bf5;
   color: #fff;
   border: none;
@@ -158,6 +159,7 @@ body {
   cursor: pointer;
   transition: none;
 }
+
 .gender-select {
   display: flex;
   gap: 0;
@@ -208,6 +210,7 @@ body {
   user-select: none;
   pointer-events: none;
 }
+
 .terms-text {
   font-size: 12px;
   font-family: Arial, sans-serif;
@@ -225,9 +228,10 @@ body {
 .terms-text a:hover {
   color: #1cb0ff;
 }
+
 .submit-btn {
-  margin-top: 8px;
-  background-color: #cccccc; /* gray when disabled */
+  margin-top: 6px;
+  background-color: #cccccc;
   color: #ffffff;
   border: none;
   border-radius: 6px;
